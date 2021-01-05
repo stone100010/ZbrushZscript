@@ -1,0 +1,2 @@
+# ZbrushZscript
+Zbrush Zscript Project
