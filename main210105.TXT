@@ -1,0 +1,755 @@
+[IButton,Play,"Press to play this ZScript. ZScript can be aborted at anytime by pressing the ëescí key.",
+[IConfig,2020]
+
+//RECORDED ZSCRIPT 2020
+
+// Click "Play" for Runing
+
+
+// create Class list
+[VarDef, CLASS(6), ""]
+[VarDef, HEADS(8), ""]
+[VarDef, SHAPES(8), ""]
+[VarDef, FORMS(8), ""]
+[VarDef, DETAILS(8), ""]
+[VarDef, EMOTIONS(8), ""]
+[VarDef, CUSTOM(2), ""]
+[VarDef, allCLASS(42), ""]
+
+
+[VarSet, CLASS(0), "HEADS"]
+[VarSet, CLASS(1), "SHAPES"]
+[VarSet, CLASS(2), "FORMS"]
+[VarSet, CLASS(3), "DETAILS"]
+[VarSet, CLASS(4), "EMOTIONS"]
+[VarSet, CLASS(5), "CUSTOM"]
+
+
+[VarSet, HEADS(0), "male"]
+[VarSet, HEADS(1), "female"]
+[VarSet, HEADS(2), "fat"]
+[VarSet, HEADS(3), "skinny"]
+[VarSet, HEADS(4), "old"]
+[VarSet, HEADS(5), "young"]
+[VarSet, HEADS(6), "primate"]
+[VarSet, HEADS(7), "alien"]
+
+[VarSet, SHAPES(0), "shape-wide"]
+[VarSet, SHAPES(1), "shape-type"]
+[VarSet, SHAPES(2), "braw_size"]
+[VarSet, SHAPES(3), "chin_size"]
+[VarSet, SHAPES(4), "ears-size"]
+[VarSet, SHAPES(5), "eyes-size"]
+[VarSet, SHAPES(6), "mouth-size"]
+[VarSet, SHAPES(7), "mouse-size"]
+
+[VarSet, FORMS(0), "ears_wide"]
+[VarSet, FORMS(1), "ears-type"]
+[VarSet, FORMS(2), "eyes_wide"]
+[VarSet, FORMS(3), "eyes_type"]
+[VarSet, FORMS(4), "mouth_wide"]
+[VarSet, FORMS(5), "mouth_type"]
+[VarSet, FORMS(6), "nouse_wide"]
+[VarSet, FORMS(7), "nouse_type"]
+
+[VarSet, DETAILS(0), "skin-a"]
+[VarSet, DETAILS(1), "skin-b"]
+[VarSet, DETAILS(2), "skin-c"]
+[VarSet, DETAILS(3), "skin-d"]
+[VarSet, DETAILS(4), "skin-e"]
+[VarSet, DETAILS(5), "skin-f"]
+[VarSet, DETAILS(6), "makeup"]
+[VarSet, DETAILS(7), "beard"]
+
+[VarSet, EMOTIONS(0), "close_eyes"]
+[VarSet, EMOTIONS(1), "open_mouth"]
+[VarSet, EMOTIONS(2), "disgust"]
+[VarSet, EMOTIONS(3), "disappoint"]
+[VarSet, EMOTIONS(4), "sadness"]
+[VarSet, EMOTIONS(5), "smile"]
+[VarSet, EMOTIONS(6), "enjoy"]
+[VarSet, EMOTIONS(7), "angry"]
+
+[VarSet, CUSTOM(0), "sculpt"]
+[VarSet, CUSTOM(1), "color"]
+
+
+[VarSet, allCLASS(0), "male"]
+[VarSet, allCLASS(1), "female"]
+[VarSet, allCLASS(2), "fat"]
+[VarSet, allCLASS(3), "skinny"]
+[VarSet, allCLASS(4), "old"]
+[VarSet, allCLASS(5), "young"]
+[VarSet, allCLASS(6), "primate"]
+[VarSet, allCLASS(7), "alien"]
+[VarSet, allCLASS(8), "shape-wide"]
+[VarSet, allCLASS(9), "shape-type"]
+[VarSet, allCLASS(10), "braw_size"]
+[VarSet, allCLASS(11), "chin_size"]
+[VarSet, allCLASS(12), "ears-size"]
+[VarSet, allCLASS(13), "eyes-size"]
+[VarSet, allCLASS(14), "mouth-size"]
+[VarSet, allCLASS(15), "mouse-size"]
+[VarSet, allCLASS(16), "ears_wide"]
+[VarSet, allCLASS(17), "ears-type"]
+[VarSet, allCLASS(18), "eyes_wide"]
+[VarSet, allCLASS(19), "eyes_type"]
+[VarSet, allCLASS(20), "mouth_wide"]
+[VarSet, allCLASS(21), "mouth_type"]
+[VarSet, allCLASS(22), "nouse_wide"]
+[VarSet, allCLASS(23), "nouse_type"]
+[VarSet, allCLASS(24), "skin-a"]
+[VarSet, allCLASS(25), "skin-b"]
+[VarSet, allCLASS(26), "skin-c"]
+[VarSet, allCLASS(27), "skin-d"]
+[VarSet, allCLASS(28), "skin-e"]
+[VarSet, allCLASS(29), "skin-f"]
+[VarSet, allCLASS(30), "makeup"]
+[VarSet, allCLASS(31), "beard"]
+[VarSet, allCLASS(32), "close_eyes"]
+[VarSet, allCLASS(33), "open_mouth"]
+[VarSet, allCLASS(34), "disgust"]
+[VarSet, allCLASS(35), "disappoint"]
+[VarSet, allCLASS(36), "sadness"]
+[VarSet, allCLASS(37), "smile"]
+[VarSet, allCLASS(38), "enjoy"]
+[VarSet, allCLASS(39), "angry"]
+[VarSet, allCLASS(40), "sculpt"]
+[VarSet, allCLASS(41), "color"]
+
+
+// python create 42 class list command list
+// [VarDef, pythoncommand(2), ""]
+// [VarSet, pythoncommand(0), "212121212121212121212121212121212121212121"]
+// [VarSet, pythoncommand(1), "112121212121212121212121212121212121212121"]
+[VarDef, pythoncommand(10), ""]
+[VarSet, pythoncommand(0), "011012120002000100111102222222222122102220"]
+[VarSet, pythoncommand(1), "000011202000110210001212222222222101010202"]
+[VarSet, pythoncommand(2), "101122010022120000100120222222221222102120"]
+[VarSet, pythoncommand(3), "201211202120102102001122222222220121001001"]
+[VarSet, pythoncommand(4), "022221200111012012202022222222222001110020"]
+[VarSet, pythoncommand(5), "210000201021222100210000222222222000122220"]
+[VarSet, pythoncommand(6), "012110110200222211112220222222222221202120"]
+[VarSet, pythoncommand(7), "121212100121102210101220222222220101211111"]
+[VarSet, pythoncommand(8), "021202222211001221100221222222222102112020"]
+[VarSet, pythoncommand(9), "212012101101211101011010222222221212111022"]
+
+// python result command
+
+
+// System Configuration
+// Interval Storage Number in [-1, 1]
+[VarDef, IntervalStorageNumber, 2]
+
+// Export All Number
+[VarDef, ExportAllNumber, 100]
+
+
+[VarDef, SubdivisionAccuracyFirst, "6"]
+[VarDef, FrontPicture, "4096"]
+[VarDef, TextureMapping, "4096"]
+
+[VarDef, SubdivisionAccuracySecond, "2"]
+// image size about TextureMapping size
+[VarDef, DisplacementMap, "000"]
+[VarDef, NormalMapping, "4096"]
+[VarDef, ModelSuffix, ".obj"]
+
+
+
+
+
+// value reset with IntervalStorageNumber
+[RoutineDef, 
+	 valueRset, 
+	 // [Note, Input]
+	 // [Note, IntStorageNum]
+	 // [Note, result]
+	 [If, 
+	 	 Input == 0 , 
+	 	 // True
+	 	 // input 0, MORPHS is 0
+	 	 [VarSet, result, 0] , 
+	 	 // Flase 
+	 	 // reduction of fractions to a common denominator
+	 	 // Molecule = 2*Input - m - 1
+	 	 // denominator = m - 1
+	 	 // result = Molecule / denominator
+
+	 	 // str2int Input to InputInt
+	 	 [VarDef, InputInt, 0]
+	 	 [If, Input==1 ,[Varset, InputInt, 1] , [Varset, InputInt, Input] ]
+	 	 [If, Input==2 ,[Varset, InputInt, 2] , [Varset, InputInt, Input] ]
+	 	 [If, Input==3 ,[Varset, InputInt, 3] , [Varset, InputInt, Input] ]
+	 	 [If, Input==4 ,[Varset, InputInt, 4] , [Varset, InputInt, Input] ]
+	 	 [If, Input==5 ,[Varset, InputInt, 5] , [Varset, InputInt, Input] ]
+	 	 [If, Input==6 ,[Varset, InputInt, 6] , [Varset, InputInt, Input] ]
+	 	 [If, Input==7 ,[Varset, InputInt, 7] , [Varset, InputInt, Input] ]
+	 	 [If, Input==8 ,[Varset, InputInt, 8] , [Varset, InputInt, Input] ]
+	 	 [If, Input==9 ,[Varset, InputInt, 9] , [Varset, InputInt, Input] ]
+	 	 // IntStorageNum to IntStorageNumInt
+	 	 [VarDef, IntStorageNumInt, 0]
+	 	 [If, IntStorageNum==2 , [Varset, IntStorageNumInt, 2] ,[Varset, IntStorageNumInt, IntStorageNum] ]
+	 	 [If, IntStorageNum==3 , [Varset, IntStorageNumInt, 3] ,[Varset, IntStorageNumInt, IntStorageNum] ]
+	 	 [If, IntStorageNum==4 , [Varset, IntStorageNumInt, 4] ,[Varset, IntStorageNumInt, IntStorageNum] ]
+	 	 [If, IntStorageNum==5 , [Varset, IntStorageNumInt, 5] ,[Varset, IntStorageNumInt, IntStorageNum] ]
+	 	 [If, IntStorageNum==6 , [Varset, IntStorageNumInt, 6] ,[Varset, IntStorageNumInt, IntStorageNum] ]
+	 	 [If, IntStorageNum==7 , [Varset, IntStorageNumInt, 7] ,[Varset, IntStorageNumInt, IntStorageNum] ]
+	 	 [If, IntStorageNum==8 , [Varset, IntStorageNumInt, 8] ,[Varset, IntStorageNumInt, IntStorageNum] ]
+	 	 [If, IntStorageNum==9 , [Varset, IntStorageNumInt, 9] ,[Varset, IntStorageNumInt, IntStorageNum] ]
+	 	 
+	 	 [VarMul, InputInt, 2]
+	 	 
+
+	 	 // [VarAdd, InputInt, InputInt]
+	 	 // [Note, InputInt]
+	 	 // [Note, IntStorageNumInt]
+	 	 [If, 
+	 	 	 InputInt == IntStorageNumInt, 
+	 	 	 [VarSet, InputInt, -1], 
+	 	 	 [VarSub, InputInt, IntStorageNumInt]
+	 	 	 [VarSub, InputInt, 1]
+	 	 	 // [Note, InputInt]
+	 	 	 // [Note, IntStorageNumInt]
+	 	 ]
+	 	 // [Note, InputInt]
+	 	 [VarSub, IntStorageNumInt, 1]
+	 	 [VarSet, result, InputInt/IntStorageNumInt]
+	 	 // [Note, result]
+	 ]
+	 , 
+	 Input, 
+	 IntStorageNum, 
+	 result
+]
+
+
+
+// // use valueRset
+// [VarDef, malesetting, ""]
+// [RoutineCall, valueRset, 0, IntervalStorageNumber, malesetting]
+// [Note, malesetting]
+// [VarDef, femalesetting, ""]
+// [RoutineCall, valueRset, 1, IntervalStorageNumber, femalesetting]
+// [Note, femalesetting]
+// [VarDef, fatsetting, ""]
+// [RoutineCall, valueRset, 2, IntervalStorageNumber, fatsetting]
+// [Note, fatsetting]
+
+
+// [VarDef, malesetting, ""]
+// [RoutineCall, valueRset, 1, IntervalStorageNumber, malesetting]
+// [Note, malesetting]
+
+
+
+// // loop test
+// [Loop, 
+// 	 [VarSize, pythoncommand], 
+// 	 [VarSet, maleval, [StrExtract, pythoncommand(loopCount), 0, 0]]
+// 	 [Note, maleval]
+// 	 [VarDef, malesetting, 0]
+// 	 [RoutineCall, valueRset, maleval, IntervalStorageNumber, malesetting]
+// 	 [VarSet, femaleval, [StrExtract, pythoncommand(loopCount), 1, 1]]
+// 	 [Note, femaleval]
+// 	 [VarDef, femalesetting, 0]
+// 	 [RoutineCall, valueRset, femaleval, IntervalStorageNumber, femalesetting]
+// 	 // [Note, femalesetting]
+// 	 , 
+// 	 loopCount
+// ]
+
+
+
+// loop 42 morphs
+[Loop, 
+	 [VarSize, pythoncommand], 
+	 [VarDef, ExportRoot, "F:\hsc_share\zscript_export"]
+	 // Commands group start
+	 [VarDef, maleval, [StrExtract, pythoncommand(loopCount), 0, 0]]
+	 // [Note, maleval]
+	 [VarDef, malesetting, 0]
+	 [RoutineCall, valueRset, maleval, IntervalStorageNumber, malesetting]
+	 // [Note, malesetting]
+	 [VarDef, femaleval, [StrExtract, pythoncommand(loopCount), 1, 1]]
+	 [VarDef, femalesetting, 0]
+	 [RoutineCall, valueRset, femaleval, IntervalStorageNumber, femalesetting]
+	 [VarDef, fatval, [StrExtract, pythoncommand(loopCount), 2, 2]]
+	 [VarDef, fatsetting, 0]
+	 [RoutineCall, valueRset, fatval, IntervalStorageNumber, fatsetting]
+	 [VarDef, skinnyval, [StrExtract, pythoncommand(loopCount), 3, 3]]
+	 [VarDef, skinnysetting, 0]
+	 [RoutineCall, valueRset, skinnyval, IntervalStorageNumber, skinnysetting]
+	 [VarDef, oldval, [StrExtract, pythoncommand(loopCount), 4, 4]]
+	 [VarDef, oldsetting, 0]
+	 [RoutineCall, valueRset, oldval, IntervalStorageNumber, oldsetting]
+	 [VarDef, youngval, [StrExtract, pythoncommand(loopCount), 5, 5]]
+	 [VarDef, youngsetting, 0]
+	 [RoutineCall, valueRset, youngval, IntervalStorageNumber, youngsetting]
+	 [VarDef, primateval, [StrExtract, pythoncommand(loopCount), 6, 6]]
+	 [VarDef, primatesetting, 0]
+	 [RoutineCall, valueRset, primateval, IntervalStorageNumber, primatesetting]
+	 [VarDef, alienval, [StrExtract, pythoncommand(loopCount), 7, 7]]
+	 [VarDef, aliensetting, 0]
+	 [RoutineCall, valueRset, alienval, IntervalStorageNumber, aliensetting]
+	 [VarDef, shapewideval, [StrExtract, pythoncommand(loopCount), 8, 8]]
+	 [VarDef, shapewidesetting, 0]
+	 [RoutineCall, valueRset, shapewideval, IntervalStorageNumber, shapewidesetting]
+	 [VarDef, shapetypeval, [StrExtract, pythoncommand(loopCount), 9, 9]]
+	 [VarDef, shapetypesetting, 0]
+	 [RoutineCall, valueRset, shapetypeval, IntervalStorageNumber, shapetypesetting]
+	 [VarDef, brawsizeval, [StrExtract, pythoncommand(loopCount), 10, 10]]
+	 [VarDef, brawsizesetting, 0]
+	 [RoutineCall, valueRset, brawsizeval, IntervalStorageNumber, brawsizesetting]
+	 [VarDef, chinsizeval, [StrExtract, pythoncommand(loopCount), 11, 11]]
+	 [VarDef, chinsizesetting, 0]
+	 [RoutineCall, valueRset, chinsizeval, IntervalStorageNumber, chinsizesetting]
+	 [VarDef, earssizeval, [StrExtract, pythoncommand(loopCount), 12, 12]]
+	 [VarDef, earssizesetting, 0]
+	 [RoutineCall, valueRset, earssizeval, IntervalStorageNumber, earssizesetting]
+	 [VarDef, eyessizeval, [StrExtract, pythoncommand(loopCount), 13, 13]]
+	 [VarDef, eyessizesetting, 0]
+	 [RoutineCall, valueRset, eyessizeval, IntervalStorageNumber, eyessizesetting]
+	 [VarDef, mouthsizeval, [StrExtract, pythoncommand(loopCount), 14, 14]]
+	 [VarDef, mouthsizesetting, 0]
+	 [RoutineCall, valueRset, mouthsizeval, IntervalStorageNumber, mouthsizesetting]
+	 [VarDef, nousesizeval, [StrExtract, pythoncommand(loopCount), 15, 15]]
+	 [VarDef, nousesizesetting, 0]
+	 [RoutineCall, valueRset, nousesizeval, IntervalStorageNumber, nousesizesetting]
+	 [VarDef, earswideval, [StrExtract, pythoncommand(loopCount), 16, 16]]
+	 [VarDef, earswidesetting, 0]
+	 [RoutineCall, valueRset, earswideval, IntervalStorageNumber, earswidesetting]
+	 [VarDef, earstypeval, [StrExtract, pythoncommand(loopCount), 17, 17]]
+	 [VarDef, earstypesetting, 0]
+	 [RoutineCall, valueRset, earstypeval, IntervalStorageNumber, earstypesetting]
+	 [VarDef, eyeswideval, [StrExtract, pythoncommand(loopCount), 18, 18]]
+	 [VarDef, eyeswidesetting, 0]
+	 [RoutineCall, valueRset, eyeswideval, IntervalStorageNumber, eyeswidesetting]
+	 [VarDef, eyestypeval, [StrExtract, pythoncommand(loopCount), 19, 19]]
+	 [VarDef, eyestypesetting, 0]
+	 [RoutineCall, valueRset, eyestypeval, IntervalStorageNumber, eyestypesetting]
+	 [VarDef, mouthwideval, [StrExtract, pythoncommand(loopCount), 20, 20]]
+	 [VarDef, mouthwidesetting, 0]
+	 [RoutineCall, valueRset, mouthwideval, IntervalStorageNumber, mouthwidesetting]
+	 [VarDef, mouthtypeval, [StrExtract, pythoncommand(loopCount), 21, 21]]
+	 [VarDef, mouthtypesetting, 0]
+	 [RoutineCall, valueRset, mouthtypeval, IntervalStorageNumber, mouthtypesetting]
+	 [VarDef, nousewideval, [StrExtract, pythoncommand(loopCount), 22, 22]]
+	 [VarDef, nousewidesetting, 0]
+	 [RoutineCall, valueRset, nousewideval, IntervalStorageNumber, nousewidesetting]
+	 [VarDef, nousetypeval, [StrExtract, pythoncommand(loopCount), 23, 23]]
+	 [VarDef, nousetypesetting, 0]
+	 [RoutineCall, valueRset, nousetypeval, IntervalStorageNumber, nousetypesetting]
+	 [VarDef, skinaval, [StrExtract, pythoncommand(loopCount), 24, 24]]
+	 [VarDef, skinasetting, 0]
+	 [RoutineCall, valueRset, skinaval, IntervalStorageNumber, skinasetting]
+	 [VarDef, skinbval, [StrExtract, pythoncommand(loopCount), 25, 25]]
+	 [VarDef, skinbsetting, 0]
+	 [RoutineCall, valueRset, skinbval, IntervalStorageNumber, skinbsetting]
+	 [VarDef, skincval, [StrExtract, pythoncommand(loopCount), 26, 26]]
+	 [VarDef, skincsetting, 0]
+	 [RoutineCall, valueRset, skincval, IntervalStorageNumber, skincsetting]
+	 [VarDef, skindval, [StrExtract, pythoncommand(loopCount), 27, 27]]
+	 [VarDef, skindsetting, 0]
+	 [RoutineCall, valueRset, skindval, IntervalStorageNumber, skindsetting]
+	 [VarDef, skineval, [StrExtract, pythoncommand(loopCount), 28, 28]]
+	 [VarDef, skinesetting, 0]
+	 [RoutineCall, valueRset, skineval, IntervalStorageNumber, skinesetting]
+	 [VarDef, skinfval, [StrExtract, pythoncommand(loopCount), 29, 29]]
+	 [VarDef, skinfsetting, 0]
+	 [RoutineCall, valueRset, skinfval, IntervalStorageNumber, skinfsetting]
+	 [VarDef, makeupval, [StrExtract, pythoncommand(loopCount), 30, 30]]
+	 [VarDef, makeupsetting, 0]
+	 [RoutineCall, valueRset, makeupval, IntervalStorageNumber, makeupsetting]
+	 [VarDef, beardval, [StrExtract, pythoncommand(loopCount), 31, 31]]
+	 [VarDef, beardsetting, 0]
+	 [RoutineCall, valueRset, beardval, IntervalStorageNumber, beardsetting]
+	 [VarDef, closeeyesval, [StrExtract, pythoncommand(loopCount), 32, 32]]
+	 [VarDef, closeeyessetting, 0]
+	 [RoutineCall, valueRset, closeeyesval, IntervalStorageNumber, closeeyessetting]
+	 [VarDef, openmouthval, [StrExtract, pythoncommand(loopCount), 33, 33]]
+	 [VarDef, openmouthsetting, 0]
+	 [RoutineCall, valueRset, openmouthval, IntervalStorageNumber, openmouthsetting]
+	 [VarDef, disgustval, [StrExtract, pythoncommand(loopCount), 34, 34]]
+	 [VarDef, disgustsetting, 0]
+	 [RoutineCall, valueRset, disgustval, IntervalStorageNumber, disgustsetting]
+	 [VarDef, disappointval, [StrExtract, pythoncommand(loopCount), 35, 35]]
+	 [VarDef, disappointsetting, 0]
+	 [RoutineCall, valueRset, disappointval, IntervalStorageNumber, disappointsetting]
+	 [VarDef, sadnessval, [StrExtract, pythoncommand(loopCount), 36, 36]]
+	 [VarDef, sadnesssetting, 0]
+	 [RoutineCall, valueRset, sadnessval, IntervalStorageNumber, sadnesssetting]
+	 [VarDef, smileval, [StrExtract, pythoncommand(loopCount), 37, 37]]
+	 [VarDef, smilesetting, 0]
+	 [RoutineCall, valueRset, smileval, IntervalStorageNumber, smilesetting]
+	 [VarDef, enjoyval, [StrExtract, pythoncommand(loopCount), 38, 38]]
+	 [VarDef, enjoysetting, 0]
+	 [RoutineCall, valueRset, enjoyval, IntervalStorageNumber, enjoysetting]
+	 [VarDef, angryval, [StrExtract, pythoncommand(loopCount), 39, 39]]
+	 [VarDef, angrysetting, 0]
+	 [RoutineCall, valueRset, angryval, IntervalStorageNumber, angrysetting]
+	 [VarDef, sculptval, [StrExtract, pythoncommand(loopCount), 40, 40]]
+	 [VarDef, sculptsetting, 0]
+	 [RoutineCall, valueRset, sculptval, IntervalStorageNumber, sculptsetting]
+	 [VarDef, colorval, [StrExtract, pythoncommand(loopCount), 41, 41]]
+	 [VarDef, colorsetting, 0]
+	 [RoutineCall, valueRset, colorval, IntervalStorageNumber, colorsetting]
+
+
+	 // file exists or not about "Front_HEADS_CLASSname_000000000000000000000000000000000000000000.tif"
+	 [VarDef, 
+	 	 StartFileName, 
+	 	 [StrMerge,  
+	 	 ExportRoot,
+	 	 "\Front\Front_HEADS", 
+	 	 "_","000000000000000000000000000000000000000000",
+	 	 ".tif"]
+	 ]
+	 
+	 [If, 
+	 	 [FileExists, StartFileName] , 
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,33]
+	 	 [IShowActions,-1]
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,25]
+	 	 [IShowActions,-1]
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,17]
+	 	 [IShowActions,-1]
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,9]
+	 	 [IShowActions,-1]
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,1]
+	 	 [IShowActions,-1]
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,9]
+	 	 [IShowActions,-1]
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,17]
+	 	 [IShowActions,-1]
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,25]
+	 	 [IShowActions,-1]
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,33]
+	 	 [IShowActions,-1]
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IShowActions,-1]
+	 	 
+	 	 [ISet, Tool: Layers:male, malesetting]
+	 	 [ISet, Tool: Layers:female, femalesetting]
+	 	 [ISet, Tool: Layers:fat, fatsetting]
+	 	 [ISet, Tool: Layers:skinny, skinnysetting]
+	 	 [ISet, Tool: Layers:old, oldsetting]
+	 	 [ISet, Tool: Layers:young, youngsetting]
+	 	 [ISet, Tool: Layers:primate, primatesetting]
+	 	 [ISet, Tool: Layers:alien, aliensetting]
+	 	 
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,33]
+	 	 [IShowActions,-1]
+	 	 
+	 	 [ISet, Tool: Layers:shape-wide, shapewidesetting]
+	 	 [ISet, Tool: Layers:shape-type, shapetypesetting]
+	 	 [ISet, Tool: Layers:braw_size, brawsizesetting]
+	 	 [ISet, Tool: Layers:chin_size, chinsizesetting]
+	 	 [ISet, Tool: Layers:ears-size, earssizesetting]
+	 	 [ISet, Tool: Layers:eyes-size, eyessizesetting]
+	 	 [ISet, Tool: Layers:mouth-size, mouthsizesetting]
+	 	 [ISet, Tool: Layers:nouse-size, nousesizesetting]
+	 	 
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,25]
+	 	 [IShowActions,-1]
+	 	 
+	 	 [ISet, Tool: Layers:ears_wide, earswidesetting]
+	 	 [ISet, Tool: Layers:ears-type, earstypesetting]
+	 	 [ISet, Tool: Layers:eyes_wide, eyeswidesetting]
+	 	 [ISet, Tool: Layers:eyes_type, eyestypesetting]
+	 	 [ISet, Tool: Layers:mouth_wide, mouthwidesetting]
+	 	 [ISet, Tool: Layers:mouth_type, mouthtypesetting]
+	 	 [ISet, Tool: Layers:nouse_wide, nousewidesetting]
+	 	 [ISet, Tool: Layers:nouse_type, nousetypesetting]
+	 	 
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,17]
+	 	 [IShowActions,-1]
+	 	 
+	 	 [ISet, Tool: Layers:skin-a, skinasetting]
+	 	 [ISet, Tool: Layers:skin-b, skinbsetting]
+	 	 [ISet, Tool: Layers:skin-c, skincsetting]
+	 	 [ISet, Tool: Layers:skin-d, skindsetting]
+	 	 [ISet, Tool: Layers:skin-e, skinesetting]
+	 	 [ISet, Tool: Layers:skin-f, skinfsetting]
+	 	 [ISet, Tool: Layers:makeup, makeupsetting]
+	 	 [ISet, Tool: Layers:beard, beardsetting]
+	 	 
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,9]
+	 	 [IShowActions,-1]
+	 	 
+	 	 [ISet, Tool: Layers:close_eyes, closeeyessetting]
+	 	 [ISet, Tool: Layers:open_mouth, openmouthsetting]
+	 	 [ISet, Tool: Layers:disgust, disgustsetting]
+	 	 [ISet, Tool: Layers:disappoint, disappointsetting]
+	 	 [ISet, Tool: Layers:sadness, sadnesssetting]
+	 	 [ISet, Tool: Layers:smile, smilesetting]
+	 	 [ISet, Tool: Layers:enjoy, enjoysetting]
+	 	 [ISet, Tool: Layers:angry, angrysetting]
+	 	 
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,1]
+	 	 [IShowActions,-1]
+	 	 
+	 	 [ISet, Tool: Layers:sculpt, sculptsetting]
+	 	 [ISet, Tool: Layers:color, colorsetting]
+	 	 
+	 	 [IShowActions,0]
+	 	 [IFreeze,
+	 	 ]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IPress,Tool:SubTool:SelectDown]
+	 	 [IPress,Tool:SubTool:SelectUp]
+	 	 [ISet,Tool:Layers:Layers Scrollbar,0,41]
+	 	 [IShowActions,-1] 
+
+
+
+	 	 // Commands group that will be executed when the routine is called
+
+	 	 ///////////////////////Setting First Team///////////////////////
+	 	 
+	 
+	 	 [CanvasStroke,(ZObjStrokeV03n2%p25BA594pB0CF680PNNN-1sAB25FA0sAB25FA0sAB25FA0Z=H344V284H344V284)]
+	 	 // Segmentation accuracy 6
+	 	 [ISet,Tool:Geometry:SDiv,6]
+	 
+	 	 // FrontPicture size--4K
+	 	 [ISet,Document:Width,FrontPicture]
+	 	 [ISet,Document:Height,FrontPicture]
+	 	 // save FrontPicture
+	 	 [FileNameSetNext,[StrMerge,  
+	 	 	 ExportRoot,
+	 	 	 "\Front\Front_HEADS", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ".tif"
+	 	 ]][IPress,Document:Export]
+	 	 [IPress,Tool:Texture Map:New From Polypaint]
+	 	 [IPress,Tool:Texture Map:Clone Txtr]
+	 	 // TextureMap size--4K
+	 	 [ISet,Texture:Width,TextureMapping]
+	 	 [ISet,Texture:Height,TextureMapping]
+	 	 // save TextureMap
+	 	 
+	 	 [FileNameSetNext,[StrMerge,  
+	 	 	 ExportRoot,
+	 	 	 "\TextureMapping\TextureMapping_HEADS", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ".tif"
+	 	 ]][IPress,Texture:Export]
+	 	 ///////////////////////Setting First Team///////////////////////
+	 	 
+	 	 
+	 	 ///////////////////////Setting Second Team///////////////////////
+	 	 // Segmentation accuracy 2
+	 	 [ISet,Tool:Geometry:SDiv,2]
+	 	 [IPress,Tool:Displacement Map:Create DispMap]
+	 	 [CanvasStroke,(ZObjStrokeV03n2%p25BA594pB0CF680PNNN-1sAB25FA0sAB25FA0sAB25FA0Z=H299V2F1H299V2F1)]
+	 	 // DisplacementMap size and TextureMap must be the same size, and need not setting the size
+	 	 [FileNameSetNext,[StrMerge,  
+	 	 	 ExportRoot,
+	 	 	 "\DisplacementMap\DisplacementMap_HEADS", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ".tif"
+	 	 ]][IPress,Tool:Displacement Map:Create And Export Map]
+	 	 [IPress,Tool:Normal Map:Create NormalMap]
+	 	 [IPress,Tool:Normal Map:Clone NM]
+	 	 // NormalMap size--4K
+	 	 [ISet,Texture:Width,NormalMapping]
+	 	 [ISet,Texture:Height,NormalMapping]
+	 	 // save NormalMap
+	 	 [FileNameSetNext,[StrMerge,  
+	 	 	 ExportRoot,
+	 	 	 "\NormalMapping\NormalMapping_HEADS", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ".tif"
+	 	 ]][IPress,Texture:Export]
+	 	 // save Now model
+	 	 [FileNameSetNext,
+	 	 [StrMerge, 
+	 	 	 ExportRoot,
+	 	 	 "\model\model", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ModelSuffix
+	 	 ]][IPress,Tool:Export]
+	 	 [IFreeze,
+	 	 ]
+	 	 , 
+	 	 // Commands group that will be executed when the routine is called
+
+	 	 ///////////////////////Setting First Team///////////////////////
+	 	 
+	 
+	 	 [CanvasStroke,(ZObjStrokeV03n2%p25BA594pB0CF680PNNN-1sAB25FA0sAB25FA0sAB25FA0Z=H344V284H344V284)]
+	 	 // Segmentation accuracy 6
+	 	 [ISet,Tool:Geometry:SDiv,6]
+	 
+	 	 // FrontPicture size--4K
+	 	 [ISet,Document:Width,FrontPicture]
+	 	 [ISet,Document:Height,FrontPicture]
+	 	 // save FrontPicture
+	 	 [FileNameSetNext,[StrMerge,  
+	 	 	 ExportRoot,
+	 	 	 "\Front\Front_HEADS", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ".tif"
+	 	 ]][IPress,Document:Export]
+	 	 [IPress,Tool:Texture Map:New From Polypaint]
+	 	 [IPress,Tool:Texture Map:Clone Txtr]
+	 	 // TextureMap size--4K
+	 	 [ISet,Texture:Width,TextureMapping]
+	 	 [ISet,Texture:Height,TextureMapping]
+	 	 // save TextureMap
+	 	 
+	 	 [FileNameSetNext,[StrMerge,  
+	 	 	 ExportRoot,
+	 	 	 "\TextureMapping\TextureMapping_HEADS", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ".tif"
+	 	 ]][IPress,Texture:Export]
+	 	 ///////////////////////Setting First Team///////////////////////
+	 	 
+	 	 
+	 	 ///////////////////////Setting Second Team///////////////////////
+	 	 // Segmentation accuracy 2
+	 	 [ISet,Tool:Geometry:SDiv,2]
+	 	 [IPress,Tool:Displacement Map:Create DispMap]
+	 	 [CanvasStroke,(ZObjStrokeV03n2%p25BA594pB0CF680PNNN-1sAB25FA0sAB25FA0sAB25FA0Z=H299V2F1H299V2F1)]
+	 	 // DisplacementMap size and TextureMap must be the same size, and need not setting the size
+	 	 [FileNameSetNext,[StrMerge,  
+	 	 	 ExportRoot,
+	 	 	 "\DisplacementMap\DisplacementMap_HEADS", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ".tif"
+	 	 ]][IPress,Tool:Displacement Map:Create And Export Map]
+	 	 [IPress,Tool:Normal Map:Create NormalMap]
+	 	 [IPress,Tool:Normal Map:Clone NM]
+	 	 // NormalMap size--4K
+	 	 [ISet,Texture:Width,NormalMapping]
+	 	 [ISet,Texture:Height,NormalMapping]
+	 	 // save NormalMap
+	 	 [FileNameSetNext,[StrMerge,  
+	 	 	 ExportRoot,
+	 	 	 "\NormalMapping\NormalMapping_HEADS", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ".tif"
+	 	 ]][IPress,Texture:Export]
+	 	 // save Now model
+	 	 [FileNameSetNext,
+	 	 [StrMerge, 
+	 	 	 ExportRoot,
+	 	 	 "\model\model", 
+	 	 	 "_",pythoncommand(loopCount),
+	 	 	 ModelSuffix
+	 	 ]][IPress,Tool:Export]
+	 	 [IFreeze,
+	 	 ]
+	 ]
+
+
+	 // Commands group end
+	 , 
+	 loopCount
+]
+
+// Edit last
+
+// 每行代码均由手工编写，非重大问题不建议改代码，
+// 核心代码由附属文件PythonPrintCommandandcl-
+// asslist.py输出Zscript命令运行完成
+
+// 疑难杂症：
+// 数值相加为零报错，
+// 变量传递，整型会变成字符串类型，
+// 变量名称不可使用任何符号，
+// loop循环结构的循环变量名称仅可用"loopCount"
+
+]/*End of ZScript*/
